@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<style>
+	table,th,tr,td{
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+<table>
+	<h1> All Employee List </h1>
+<th> ID </th>
+<th> Name </th>
+<th> Review </th>	
+{% for company in companys %}
+<tr>
+	<td>{{company.id}}</td>
+	<td>{{company.name}}</td>
+	<td>{{company.review}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

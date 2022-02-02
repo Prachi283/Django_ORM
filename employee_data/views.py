@@ -14,7 +14,7 @@ def home(request):
 	# emp_data=Employee.objects.exclude(position="Accountant")
 	
 	# It will order in ascending order 
-	# emp_data=Employee.objects.order_by('name')
+	emp_data=Employee.objects.order_by('name')
 
 	# It will order table in descending order
 	# emp_data=Employee.objects.order_by('-name')

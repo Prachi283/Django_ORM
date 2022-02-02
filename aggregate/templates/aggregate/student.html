@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aggregate Page</title>
+	<style>
+	table,th,tr,td{
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+<table>
+	<h1> Students </h1>
+<th> ID </th>
+<th> Name </th>
+<th> Roll </th>
+<th> City </th>
+<th> Marks </th>
+<th> Pass Date </th>
+<th> AdmissionDateTime </th>	
+{% for st in students %}
+<tr>
+	<td>{{st.id}}</td>
+	<td>{{st.name}}</td>
+	<td>{{st.roll}}</td>
+	<td>{{st.city}}</td>
+	<td>{{st.marks}}</td>
+	<td>{{st.passdate}}</td>
+	<td>{{st.admdatetime}}</td>
+</tr>
+{% endfor %}
+</table>
+<h3> Average{{average}}</h3>
+<h3> Average Data{{average.marks__avg}}</h3><hr>
+
+
+<h3> Sum Data{{total}}</h3>
+<h3> Sum{{total.marks__sum}}</h3><hr>
+
+<h3> Minimum Data{{minimum}}</h3>
+<h3> minimum {{minimum.marks__min}}</h3><hr>
+
+<h3> Maximum data{{maximum}}</h3>
+<h3> maximum {{maximum.marks__max}}</h3><hr>
+
+<h3> Count Data{{totalcount}}</h3>
+<h3> Count {{totalcount.marks__count}}</h3><hr>
+
+</body>
+</html>
