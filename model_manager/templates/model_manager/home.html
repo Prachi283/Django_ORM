@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<style>
+	table,th,tr,td{
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+<table>
+	<h1> Students </h1>
+<th> ID </th>
+<th> Name </th>
+<th> Roll </th>
+{% for st in students %}
+<tr>
+	<td>{{st.id}}</td>
+	<td>{{st.name}}</td>
+	<td>{{st.roll}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

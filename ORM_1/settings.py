@@ -41,6 +41,13 @@ INSTALLED_APPS = [
     'employee',
     'company',
     'aggregate',
+    'school_model_inheritance',
+    'multitable_inheritance_app',
+    'proxymodel',
+    'model_manager',
+    'onetoone_relationship',
+    'manytoone',
+    'manytomany',
 ]
 
 MIDDLEWARE = [

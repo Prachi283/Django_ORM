@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<style>
+	table,th,tr,td{
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+<table>
+	<h1> ExamCenters </h1>
+<th> ID </th>
+<th> Name </th>
+<th> City </th>
+{% for center in centers %}
+<tr>
+	<td>{{center.id}}</td>
+	<td>{{center.cname}}</td>
+	<td>{{center.city}}</td>
+</tr>
+{% endfor %}
+</table>
+
+<table>
+	<h1> MyExamCenters ==> </h1>
+<th> ID </th>
+<th> Name </th>	
+<th> City</th>
+{% for c in mycenters %}
+<tr>
+	<td>{{c.id}}</td>
+	<td>{{c.cname}}</td>
+	<td>{{c.city}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

@@ -22,4 +22,8 @@ urlpatterns = [
     path('employee/',include('employee.urls')),
     path('company/',include('company.urls')),
     path('aggregate/',include('aggregate.urls')),
+    path('school_model_inheritance/',include('school_model_inheritance.urls')),
+    path('multitable_inheritance_app/',include('multitable_inheritance_app.urls')),
+    path('proxymodel/',include('proxymodel.urls')),
+    path('model_manager/',include('model_manager.urls')),
 ]
